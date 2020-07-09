@@ -3,8 +3,14 @@ package com.example.model;
 import com.example.model.enums.PaymentStatus;
 import com.example.model.enums.PaymentType;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import java.util.Date;
 
+@XmlRootElement(name = "payments")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Payment {
 
     private Long paymentId;
